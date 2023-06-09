@@ -1,0 +1,21 @@
+<!-- Description: This is the main page for the analyst document upload application. -->
+<!doctype html>
+<html>
+<head>
+<title>4T Analyst</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+</head>
+<body>
+    
+    #Text explaining what the page is for.
+    <p>Upload your analyst documents here.</p>
+    #Create an input form for uploading analyst documents and some text above it with instructions for the user.
+    #Create a button that will submit the form and upload the documents to the server.  The button should be disabled until the user has selected a file to upload.
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="upload" id="upload" />
+        <input type="submit" value="Upload" />
+    </form>
+
+</body>
+</html>
