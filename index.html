@@ -8,14 +8,17 @@
 </head>
 <body>
     
-    #Text explaining what the page is for.
+    <!-- Text explaining what the page is for. -->
     <p>Upload your analyst documents here.</p>
-    #Create an input form for uploading analyst documents and some text above it with instructions for the user.
-    #Create a button that will submit the form and upload the documents to the server.  The button should be disabled until the user has selected a file to upload.
+    <!-- Create an input form for uploading analyst documents and some text above it with instructions for the user.
+    Create a button that will submit the form and upload the documents to the server.  The button should be disabled until the user has selected a file to upload. -->
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="upload" id="upload" />
         <input type="submit" value="Upload" />
     </form>
+    <!-- Create a button that will take the user to the page where they can view the analyst documents. -->
+    <button onclick="window.location.href='/view'">View Analyst Documents</button>
+
 
 </body>
 </html>
